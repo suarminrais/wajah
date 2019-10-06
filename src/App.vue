@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Head></Head>
+    <Sesi></Sesi>
+    <Berita></Berita>
+    <Visi></Visi>
+    <Testimoni></Testimoni>
+    <Relawan></Relawan>
+    <Video></Video>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Head from './components/Head'
+import Sesi from './components/Sesi'
+import Berita from './components/Berita'
+import Visi from './components/Visi'
+import Footer from './components/Footer'
+import Relawan from './components/Relawan'
+import Video from './components/Video'
+import Testimoni from './components/Testimoni'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Head, Sesi, Berita,
+    Visi, Relawan, Footer,
+    Video, Testimoni
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
